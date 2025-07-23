@@ -138,7 +138,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .section-title {
@@ -305,25 +305,14 @@ button {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 .social-icon {
   fill: #f4f4fd;
 }
 
-/* .our-team-sm {
-  background-color: #4d5ae5;
-  cursor: pointer;
-}
-.input-item {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.7);
-} */
-
 /* Section four */
 .portfolio {
-  text-align: center;
   padding: 120px 0;
 }
 .portfolio-title {
@@ -346,10 +335,9 @@ button {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item:hover {
+.portfolio-item:hover  {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transform: translatey(0);
 }
 .portfolio-pop-up {
   position: relative;
@@ -390,6 +378,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+.portfolio-item:hover .pop-up-text {
+  transform: translatey(0);
 }
 
 /* Footer */
@@ -465,5 +456,7 @@ button {
   background-color: #31d0aa;
 }
 .footer-social-icon {
-    fill: #f4f4fd;
+  fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
 }
